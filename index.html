@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+
+<body>
+
+  <div class="main">
+    <h1 class="title">Minhas tarefas</h1>
+
+    <div class="new-task">
+      <button id="save" class="save" onclick="save()" disabled></button>
+      <input type="text" name="task" id="task" placeholder="Criar nova tarefa...">
+    </div>
+
+    <div id="tasks">
+      <p class="clean">Nenhuma tarefa cadastrada</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><button onclick="nav('all')" id="all" disabled>Todas</button></li>
+        <li><button onclick="nav('active')" id="active" disabled>Pendentes</button></li>
+        <li><button onclick="nav('completed')" id="completed" disabled>Concluídas</button></li>
+      </ul>
+    </nav>
+
+    <div class="clear-all">
+      <button id="clear-all" onclick="removeAll()">Limpar todas as tarefas</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

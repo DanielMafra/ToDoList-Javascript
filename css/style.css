@@ -1,0 +1,246 @@
+/*=== CSS IMPORTS ===*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/*=== RESET ===*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #181E2A;
+}
+
+.main {
+  margin: 0 auto;
+  max-width: 540px;
+}
+
+/*=== TITLE ===*/
+
+.title {
+  margin-top: 32px;
+  margin-left: 24px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+/*=== NEW TASK ===*/
+
+.new-task {
+  display: flex;
+  background-color: #21293C;
+  margin: 32px 24px 0px 24px;
+  padding: 20px 14px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.save {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  border: 1px solid #7C7C7C;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+}
+
+.active-save {
+  background-color: #63E2DB;
+}
+
+#task {
+  margin-left: 12px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: #FFFFFF;
+}
+
+/*=== TASKS AREA ===*/
+
+#tasks {
+  margin: 0 auto;
+  background-color: #21293C;
+  margin: 16px 24px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clean {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 12px;
+}
+
+nav{
+  background-color: #21293C;
+  margin: 0 24px;
+  border-radius: 6px;
+  padding: 12px 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav > ul > li > button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #7C7C7C;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+nav > ul > li > button:disabled {
+  color: #4d4343;
+}
+
+nav > ul > li:nth-child(1),
+nav > ul > li:nth-child(2) {
+  margin-right: 16px;
+}
+
+/*=== CREATE LIST ===*/
+
+#list {
+  list-style: none;
+}
+
+.item-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.check-btn {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  border: 1px solid #63E2DB;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  margin-right: 11px;
+}
+
+.check-btn-true {
+  background-color: red;
+}
+
+.check-btn:hover {
+  background-color: #63E2DB;
+}
+
+.btn-task {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+
+.remove-btn {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: transparent;
+  outline: none;
+  margin-right: 16px;
+  margin-left: 11px;
+}
+
+.done {
+  color: #7C7C7C;
+  text-decoration: line-through;
+}
+
+.done-button {
+  background-color: red;
+}
+
+hr {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border: none;
+  height: 1px;
+  background-color: #181E2A;
+}
+
+.delete {
+  color: #7C7C7C;
+}
+
+#pendents {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+#pendents p {
+  color: #63E2DB;
+  font-size: 12px;
+}
+
+#pendents button {
+  color: #63E2DB;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+/*=== CLEAR TASKS ===*/
+
+.clear-all {
+  text-align: center;
+  margin: 36px auto;
+}
+
+.clear-all button {
+  background-color: transparent;
+  color: #63E2DB;
+  border: none;
+  outline: none;
+  font-size: 12px;
+}
+
+/*=== NAV TASKS ===*/
+
+.op-active {
+  color: #0991BA;
+}
